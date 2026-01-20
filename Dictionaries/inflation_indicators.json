@@ -1,0 +1,177 @@
+{
+  "General Inflation": {
+    "general_patterns": [
+      "\\bdeflation\\b",
+      "\\bprice\\s+stability\\b",
+      "\\bstable\\s+prices\\b",
+      "\\bprices\\b(?!\\s+(of|in|for|on)\\s+(services?|goods|housing|energy|food|consumer|commodity|raw\\s+materials?|oil|gasoline|fuel|electricity|natural\\s+gas|shelter|rent|rental|residential))"
+    ]
+  },
+  "Core Measures": {
+    "core_cpi_patterns": [
+      "\\b(core|underlying)\\s+cpi\\b",
+      "\\bcpi\\s+(core|underlying)\\b",
+      "\\b(core|underlying)\\s+consumer\\s+price\\s+index\\b",
+      "\\b(consumer\\s+price\\s+index)\\s+(core|underlying)\\b",
+      "\\bcore\\s+consumer\\s+price\\s+inflation\\b"
+    ],
+    "core_general_patterns": [
+      "\\bcore\\s+inflation\\b",
+      "\\bunderlying\\s+inflation\\b",
+      "\\bunderlying\\s+price\\s+pressures?\\b",
+      "\\bcore\\s+prices?\\b",
+      "\\bcore\\s+price\\s+inflation\\b"
+    ],
+    "core_pce_patterns": [
+      "\\b(core|underlying)\\s+(pce|personal\\s+consumption\\s+expenditures?)\\b(?!\\s+real)",
+      "\\b(pce|personal\\s+consumption\\s+expenditures?)\\s+(core|underlying)\\b(?!\\s+real)",
+      "\\bcore\\s+personal\\s+consumption\\b(?!\\s+expenditures?\\s+real)",
+      "(?<!real\\s)\\b(core|underlying)\\s+(pce|personal\\s+consumption\\s+expenditures?)\\b"
+    ],
+    "excluding_patterns": [
+      "\\b(cpi|pce|consumer\\s+price|personal\\s+consumption|inflation|prices?)\\s+(excluding|ex|minus|without|less)\\s+(food|energy|volatile)\\b(?!\\s+real)",
+      "\\b(excluding|ex|minus|without|less)\\s+(food|energy|volatile)\\s+(cpi|pce|consumer\\s+price|inflation|prices?)\\b(?!\\s+real)",
+      "\\b(cpi|pce|inflation|prices?)\\s+(excluding|ex|minus|without|less)\\s+(food\\s+and\\s+energy|volatile\\s+items)\\b(?!\\s+real)",
+      "\\b(stripping\\s+out|stripped\\s+of)\\s+(food|energy|volatile)\\b",
+      "\\bex[\\-\\s]food\\s+and\\s+energy\\b",
+      "\\bexcluding\\s+volatile\\s+(food\\s+and\\s+)?energy\\b"
+    ],
+    "trimmed_patterns": [
+      "\\b(trimmed|weighted)\\s+(mean|median|average)\\s+(cpi|pce|inflation|prices?)\\b",
+      "\\b(cpi|pce|inflation|prices?)\\s+(trimmed|weighted)\\s+(mean|median|average)\\b",
+      "\\b(trimmed-mean|weighted-median)\\b",
+      "\\btrimmed\\s+mean\\b"
+    ],
+    "excluding_housing_patterns": [
+      "\\b(services?|cpi|pce|inflation|prices?)\\s+(excluding|ex|minus|without|less)\\s+(housing|shelter|rent)\\b",
+      "\\b(excluding|ex|minus|without|less)\\s+(housing|shelter|rent)\\s+(services?|inflation|prices?)\\b",
+      "\\bex[\\-\\s]housing\\b",
+      "\\bexcluding\\s+housing\\b"
+    ],
+    "excluding_energy_patterns": [
+      "\\b(cpi|pce|inflation|prices?)\\s+(excluding|ex|minus|without|less)\\s+energy\\b",
+      "\\b(excluding|ex|minus|without|less)\\s+energy\\s+(cpi|pce|inflation|prices?)\\b",
+      "\\bex[\\-\\s]energy\\b",
+      "\\bexcluding\\s+energy\\b"
+    ],
+    "supercore_patterns": [
+      "\\bsupercore\\b",
+      "\\bsuper\\s+core\\b",
+      "\\bservices?\\s+(excluding|ex|minus|without)\\s+(housing|shelter)\\b",
+      "\\bcore\\s+services?\\s+(excluding|ex|minus|without)\\s+(housing|shelter)\\b",
+      "\\bcore\\s+services\\s+ex[\\-\\s]housing\\b"
+    ]
+  },
+  "Headline Measures": {
+    "headline_cpi_patterns": [
+      "\\b(headline|overall|total|all-items?)\\s+cpi\\b",
+      "\\bcpi\\s+(headline|overall|total)\\b",
+      "\\b(headline|overall|total|all-items?)\\s+consumer\\s+price\\s+index\\b",
+      "\\b(headline|overall|total|all-items?)\\s+consumer\\s+prices?\\b",
+      "\\b(consumer\\s+price\\s+index|consumer\\s+prices?)\\s+(headline|overall|total)\\b",
+      "\\bcpi\\b(?!\\s+(core|excluding|ex|minus|without|trimmed))",
+      "\\bconsumer\\s+price\\s+index\\b(?!\\s+(core|excluding|ex|minus|without))",
+      "\\ball\\s+items\\s+cpi\\b",
+      "\\btotal\\s+cpi\\b"
+    ],
+    "headline_general_patterns": [
+      "\\bheadline\\s+inflation\\b",
+      "\\boverall\\s+inflation\\b",
+      "\\btotal\\s+inflation\\b",
+      "\\ball[\\-\\s]items?\\s+inflation\\b",
+      "\\bheadline\\s+prices?\\b",
+      "\\boverall\\s+prices?\\b"
+    ],
+    "headline_pce_patterns": [
+      "\\b(headline|overall|total|all-items?)\\s+pce\\b(?!\\s+real)",
+      "\\bpce\\s+(headline|overall|total)\\b(?!\\s+real)",
+      "\\b(headline|overall|total|all-items?)\\s+personal\\s+consumption\\s+expenditures?\\b(?!\\s+real)",
+      "\\b(pce|personal\\s+consumption\\s+expenditures?)\\s+(headline|overall|total)\\b(?!\\s+real)",
+      "\\bpce\\b(?!\\s+(core|excluding|ex|minus|without|real))",
+      "\\bpersonal\\s+consumption\\s+expenditures?\\b(?!\\s+(core|excluding|ex|minus|without|real))",
+      "\\ball\\s+items\\s+pce\\b(?!\\s+real)",
+      "\\btotal\\s+pce\\b(?!\\s+real)",
+      "(?<!real\\s)\\b(headline|overall|total|all-items?)\\s+(pce|personal\\s+consumption\\s+expenditures?)\\b"
+    ],
+    "general_headline_patterns": [
+      "\\bheadline\\s+inflation\\b",
+      "\\boverall\\s+inflation\\b",
+      "\\btotal\\s+inflation\\b",
+      "\\ball[\\-\\s]items?\\s+inflation\\b"
+    ]
+  },
+  "Sectoral Measures": {
+    "services_patterns": [
+      "\\bservices?\\s+(inflation|prices?|costs?|pricing)\\b",
+      "\\b(inflation|prices?|costs?|pricing)\\s+(in|of|for|on)\\s+services?\\b",
+      "\\b(price|cost|pricing)\\s+of\\s+services?\\b",
+      "\\bservice\\s+(sector\\s+)?inflation\\b",
+      "\\bservices\\s+component\\b"
+    ],
+    "goods_patterns": [
+      "\\b(consumer\\s+)?goods\\s+(inflation|prices?|costs?|pricing)\\b",
+      "\\b(inflation|prices?|costs?|pricing)\\s+(in|of|for|on)\\s+(consumer\\s+)?goods\\b",
+      "\\b(price|cost|pricing)\\s+of\\s+(consumer\\s+)?goods\\b",
+      "\\bgoods\\s+(sector\\s+)?inflation\\b",
+      "\\bgoods\\s+component\\b"
+    ],
+    "housing_patterns": [
+      "\\bhousing\\s+(inflation|prices?|costs?|pricing)\\b",
+      "\\b(inflation|prices?|costs?|pricing)\\s+(in|of|for|on)\\s+housing\\b",
+      "\\b(price|cost|pricing)\\s+of\\s+housing\\b",
+      "\\bhousing\\s+(sector\\s+)?inflation\\b",
+      "\\bhousing\\s+component\\b",
+      "\\b(shelter|rent|rental|residential)\\s+(inflation|prices?|costs?)\\b",
+      "\\bowners?\\s+equivalent\\s+rent\\b",
+      "\\boer\\b",
+      "\\brent\\s+inflation\\b"
+    ],
+    "energy_patterns": [
+      "\\benergy\\s+(inflation|prices?|costs?|pricing)\\b",
+      "\\b(inflation|prices?|costs?|pricing)\\s+(in|of|for|on)\\s+energy\\b",
+      "\\b(gasoline|fuel|electricity|natural\\s+gas)\\s+(inflation|prices?|costs?)\\b"
+    ],
+    "food_patterns": [
+      "\\bfood\\s+(inflation|prices?|costs?|pricing)\\b",
+      "\\b(inflation|prices?|costs?|pricing)\\s+(in|of|for|on)\\s+food\\b",
+      "\\bfood\\s+component\\b"
+    ]
+  },
+  "Producer Price Index": {
+    "ppi_patterns": [
+      "\\bproducer\\s+price\\s+index\\b",
+      "\\bppi\\b",
+      "\\bproducer\\s+(inflation|prices?|costs?)\\b",
+      "\\bwholesale\\s+(inflation|prices?)\\b"
+    ]
+  },
+  "Wage Inflation": {
+    "wage_patterns": [
+      "\\b(wage|wages|salary|salaries|pay|earnings|compensation)\\s+(inflation|growth|gains?|increases?|rises?)\\b",
+      "\\bwage\\s+(inflation|growth|gains?|increases?|pressures?)\\b",
+      "\\baverage\\s+hourly\\s+earnings\\b",
+      "\\bemployment\\s+cost\\s+index\\b",
+      "\\bunit\\s+labor\\s+costs?\\b",
+      "\\blabor\\s+costs?\\b",
+      "\\bwage\\s+pressures?\\b"
+    ]
+  },
+  "Inflation Expectations": {
+    "expectations_patterns": [
+      "\\binflation\\s+expectations?\\b",
+      "\\bexpected\\s+inflation\\b",
+      "\\binflation\\s+(forecasts?|outlook|projections?)\\b",
+      "\\b(long-term|short-term)\\s+(inflation\\s+)?expectations?\\b",
+      "\\bbreakeven\\s+(inflation|rates?)\\b",
+      "\\binflation\\s+compensation\\b"
+    ]
+  },
+  "Commodity Prices": {
+    "commodity_patterns": [
+      "\\bcommodity\\s+(inflation|prices?|costs?)\\b",
+      "\\boil\\s+(prices?|costs?)\\b",
+      "\\benergy\\s+(prices?|costs?)\\b",
+      "\\braw\\s+materials?\\s+(prices?|costs?)\\b"
+    ]
+  }
+}

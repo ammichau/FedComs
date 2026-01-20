@@ -1,0 +1,23 @@
+{
+  "general_patterns": "General_Inflation",
+  "core_cpi_patterns": "Core_CPI",
+  "core_general_patterns": "Core",
+  "core_pce_patterns": "Core_PCE",
+  "excluding_patterns": "Core_CPI",
+  "trimmed_patterns": "Core_CPI",
+  "excluding_housing_patterns": "Core_CPI",
+  "excluding_energy_patterns": "Core_CPI",
+  "supercore_patterns": "Core_PCE",
+  "headline_cpi_patterns": "Headline_CPI",
+  "headline_general_patterns": "Headline",
+  "headline_pce_patterns": "Headline_PCE",
+  "services_samples": "Services",
+  "goods_patterns": "Goods",
+  "housing_patterns": "Housing",
+  "energy_patterns": "Energy",
+  "food_patterns": "Food",
+  "ppi_patterns": "PPI",
+  "wage_patterns": "Wage_Inflation",
+  "expectations_patterns": "Inflation_Expectations",
+  "commodity_patterns": "Commodity_Prices"
+}
